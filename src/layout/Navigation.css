@@ -1,0 +1,31 @@
+.navbar {
+  position: fixed;
+  display: flex;
+}
+
+.container {
+  background-color: ghostwhite;
+  margin-left: 12em;
+  margin-top: 0.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.navbar-brand {
+  background-color: rgb(172, 224, 172);
+  text-shadow: hotpink;
+  padding-right: 1em;
+  padding-left: 1em;
+  border-style: double;
+  border-color: lightseagreen;
+}
+.nav-item {
+  background-color: lightcyan;
+  text-shadow: salmon;
+  border-style: double;
+  border-color: lightseagreen;
+}
+
+a:hover {
+  background-color: lightpink;
+}
