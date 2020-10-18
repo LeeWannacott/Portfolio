@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { Component } from 'react'
 import { isCompositeComponent } from 'react-dom/test-utils'
+import './GitHub.css';
 
 export class Github extends Component {
     state = {
@@ -66,22 +67,40 @@ export class Github extends Component {
     render() {
 
         return (
-            <div>
-                <table style={{ width: '100%' }}>
-                    <p>
+            <div class='container'>
 
-                        {
-                            this.state.repos.map(repo => (
-                                <div key='id'><td>{repo.name}</td></div>
+                <table class='table table-sm'>
+                    <tr><td>Repository Name</td>
+                        <td>Language</td>
+                        <td>Description</td>
+                        <td>Forks</td>
+                        <td>Open issues</td>
+                        <td>Watchers</td>
+                        <td>Stars</td>
+                        <td>Size</td>
+
+                    </tr>
+
+                    {
+                        this.state.repos.map(repo => (
+
+                            <tr key='id'><td><a href={repo.html}><div>{repo.name}</div></a></td>
+                                <td>    {repo.language}</td>
+                                <td>    {repo.description}</td>
+
+                                <td>    {repo.forks}</td>
+                                <td>    {repo.open_issues}</td>
+                                <td>    {repo.watchers}</td>
+                                <td>    {repo.stargazers_count}</td>
+                                <td>    {repo.size + 'kB'}</td>
 
 
 
+                            </tr>
+                        ))
+                    }
 
 
-                            ))
-                        }
-
-                    </p>
                 </table>
             </div >
 
