@@ -1,15 +1,16 @@
 .navbar {
+  margin-top: 1em;
   position: fixed;
   display: flex;
 }
-
+/* 
 .container {
   background-color: ghostwhite;
   margin-left: 12em;
   margin-top: 0.5em;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
-}
+} */
 
 .navbar-brand {
   background-color: rgb(172, 224, 172);
@@ -24,8 +25,10 @@
   text-shadow: salmon;
   border-style: double;
   border-color: lightseagreen;
+  color: lime;
 }
 
 a:hover {
   background-color: lightpink;
+  color: white;
 }

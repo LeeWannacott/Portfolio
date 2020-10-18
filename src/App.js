@@ -2,14 +2,15 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { render } from '@testing-library/react';
-import Navigation from './layout/Navigation';
+import NavBar from './layout/NavBar';
+import Projects from './layout/Projects';
 
 
 function App() {
   return (
     <div className="App">
-    <header><Navigation className="App-header"/></header>
-    <footer><p>hello</p></footer>
+    <header><NavBar /></header>
+    <footer></footer>
     </div>
   );
 }
