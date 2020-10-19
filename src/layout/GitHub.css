@@ -1,18 +1,35 @@
-.table {
-    font-family: arial, sans-serif;
+table {
+    font-family: arial;
     border-collapse: collapse;
     width: 100%;
-  }
-  
-  .td, .th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-  }
-  
-  .tr:nth-child(even) {
-    background-color: #dddddd;
-  }
-  .container{
     
   }
+  
+  td, th {
+    border: 1px solid #4ebe8a;
+    text-align: left;
+    padding: 1em;
+  }
+  
+.bioInfo{
+    /* text-align: left;
+    text-align: top; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+    margin-left: 0;
+    
+}
+.GitHubChart{
+    margin-left: 0.10em;
+    margin-top: 0.25em;
+
+}
+
+a:hover{
+    background-color:lightblue;
+  mix-blend-mode: hard-light;
+  color:lightcoral);
+}
