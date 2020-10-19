@@ -14,7 +14,7 @@
 
 .navbar-brand {
   background-color: hsl(120, 46%, 78%);
-  text-shadow: hotpink;
+  
   padding-right: 1em;
   padding-left: 1em;
   border-style: double;
@@ -22,13 +22,13 @@
 }
 .nav-item {
   background-color: lightcyan;
-  text-shadow: salmon;
+ 
   border-style: double;
   border-color: lightseagreen;
-  color: lime;
+  
 }
 
 a:hover {
-  background-color: lightpink;
-  color: white;
+  background-color: hotpink;
+  
 }

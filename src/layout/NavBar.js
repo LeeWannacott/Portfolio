@@ -13,25 +13,25 @@ export class NavBar extends Component {
     return (
 
       <div>
-        <div class="container">
-          <nav class="navbar navbar-light navbar-expand-xl" style={{ backgroundColor: "#e3f2fd" }}>
-            <a class="navbar-brand" href="#">Lee Wannacott</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+        <div className="container">
+          <nav className="navbar navbar-light navbar-expand-xl" style={{ backgroundColor: "#e3f2fd" }}>
+            <a className="navbar-brand" href="#">Lee Wannacott</a>
+            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span className="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
+            <div className="collapse navbar-collapse" id="navbarNav">
+              <ul className="navbar-nav">
                 {/* Navbar items */}
-                <li class="nav-item"><Nav.Link class='Nav-link' as={Link} to="/projects">
+                <li className="nav-item"><Nav.Link className='Nav-link' as={Link} to="/projects">
                   Projects
               </Nav.Link></li>
-                <li class="nav-item"><Nav.Link class='Nav-link' as={Link} to="/projects">
+                <li className="nav-item"><Nav.Link className='Nav-link' as={Link} to="/projects">
                   Projects
               </Nav.Link></li>
-                <li class="nav-item"><Nav.Link class='Nav-link' as={Link} to="/GitHub">
+                <li className="nav-item"><Nav.Link className='Nav-link' as={Link} to="/GitHub">
                   Github Statistics
               </Nav.Link></li>
-                <li class="nav-item"><Nav.Link class='Nav-link' as={Link} to="/projects">
+                <li className="nav-item"><Nav.Link className='Nav-link' as={Link} to="/projects">
                   Contact
               </Nav.Link></li>
               </ul>

@@ -113,7 +113,7 @@ export class Github extends Component {
 
                 </div>
 
-                <h6 style={{ textAlign: 'left', marginTop: '0.25em' }}>Statistics on public repositories pulled from the GitHub API v3:</h6>
+                <h6 style={{ textAlign: 'left', marginTop: '0.25                em' }}>Statistics on public repositories pulled from the GitHub API v3:</h6>
 
                 <table>
 

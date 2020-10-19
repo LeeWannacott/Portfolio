@@ -5,10 +5,17 @@ table {
     
   }
   
-  td, th {
+  td{
     border: 1px solid #4ebe8a;
     text-align: left;
     padding: 1em;
+  }
+
+  th {
+      background-color: #f8e5e5;
+      border: 1px solid #4ebe8a;
+      text-align: left;
+      padding: 1em;
   }
   
 .bioInfo{
