@@ -34,9 +34,15 @@ table {
     margin-top: 0.25em;
 
 }
-
-a:hover{
+.LinkedIn:hover{
     background-color:lightblue;
   mix-blend-mode: hard-light;
-  color:lightcoral);
+  color:purple;
 }
+
+.GitHubIcon:hover{
+    background-color:lightblue;
+  mix-blend-mode: hard-light;
+  color:purple;
+}
+

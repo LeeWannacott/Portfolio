@@ -99,7 +99,7 @@ export class Github extends Component {
 
                 {console.log(this.state.stars.length)}
                 <div className="bioInfo" >
-                    <a href={this.state.user.html_url}><img src={this.state.user.avatar_url} style={{ width: "7em" }}></img></a>
+                    <a href={this.state.user.html_url} className='GitHubIcon'><img src={this.state.user.avatar_url} style={{ width: "7em" }}></img></a>
                     <span style={{ textAlign: 'left', marginLeft: '1em', marginTop: ' 0.5em', marginRight: '1em' }}>
                         <p>
                             {"Following: " + this.state.user.following + " "}<br />
@@ -107,7 +107,7 @@ export class Github extends Component {
                             {"Repositories: " + this.state.user.public_repos}<br />
                             {"Stars: " + this.state.stars.length + " "}</p></span>
                     <img src="http://ghchart.rshah.org/be4eb9/LeeWannacott" className="GitHubChart" alt="Name Your GitHub chart"></img>
-                    <a href="https://www.linkedin.com/in/lee-wannacott-64289b174/"><img src="https://cdn.fastly.picmonkey.com/content4/previews/icons_linkedin/icons_linkedin_11_550.png" alt="LinkedIn" style={{ width: "7em", marginTop: '0.25em', marginLeft: '1em', alignContent: 'flex-end' }} ></img></a>
+                    <a href="https://www.linkedin.com/in/lee-wannacott-64289b174/" className='LinkedIn'><img src="https://cdn.fastly.picmonkey.com/content4/previews/icons_linkedin/icons_linkedin_11_550.png" alt="LinkedIn" style={{ width: "7em", marginTop: '0.25em', marginLeft: '1em', alignContent: 'flex-end' }} ></img></a>
 
 
 
