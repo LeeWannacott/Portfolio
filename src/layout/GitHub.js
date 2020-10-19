@@ -14,16 +14,6 @@ export class Github extends Component {
     }
 
     componentDidMount() {
-        const script = document.createElement("script");
-
-        script.src = "https://www.kryogenix.org/code/browser/sorttable/sorttable.js";
-        script.async = true;
-
-        document.body.appendChild(script);
-
-
-
-
         this.setState({ loading: true })
         axios.get(`https://api.github.com/users/leewannacott/repos?client_id=${process.env.REACT_APP_GITHUB_CLIENT_ID}&client_secret${process.env.REACT_APP_GITHUB_CLIENT_SECRET}`)
             .then(res => {
@@ -113,7 +103,7 @@ export class Github extends Component {
 
                 </div>
 
-                <h6 style={{ textAlign: 'left', marginTop: '0.25                em' }}>Statistics on public repositories pulled from the GitHub API v3:</h6>
+                <h6 style={{ textAlign: 'left', marginTop: '0.25em' }}>Statistics on public repositories pulled from the GitHub API v3:</h6>
 
                 <table>
 
@@ -126,8 +116,6 @@ export class Github extends Component {
                         <th>Watchers</th>
                         <th>Stars</th>
                         <th>Size</th>
-
-
                     </tr>
 
                     {
@@ -143,26 +131,14 @@ export class Github extends Component {
                                 <td>    {repo.watchers}</td>
                                 <td>    {repo.stargazers_count}</td>
                                 <td>    {Math.round(repo.size / 1000) + 'MB'}</td>
-
-
-
                             </tr>
                         ))
                     }
-
-
                 </table>
-
-
-
             </div >
 
         )
-
-
-
     }
-
 }
 
 export default Github
