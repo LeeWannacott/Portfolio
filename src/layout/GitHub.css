@@ -2,6 +2,7 @@ table {
     font-family: arial;
     border-collapse: collapse;
     width: 100%;
+    margin-bottom: 2em;
     
   }
   
@@ -52,4 +53,5 @@ table.sortable thead {
   font-weight: bold;
   cursor: default;
 }
+
 

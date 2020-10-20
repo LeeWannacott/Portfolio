@@ -56,7 +56,7 @@ export class Github extends Component {
                             {"Followers: " + this.state.user.followers + " "}<br />
                             {"Repositories: " + this.state.user.public_repos}<br />
                             {"Stars: " + this.state.stars.length + " "}</p></span>
-                    <img src="http://ghchart.rshah.org/be4eb9/LeeWannacott" className="GitHubChart" alt="Name Your GitHub chart"></img>
+                    <img src="http://ghchart.rshah.org/be4eb9/LeeWannacott" className="GitHubChart" alt="Lee Wannacott GitHub chart"></img>
                     <a href="https://www.linkedin.com/in/lee-wannacott-64289b174/" className='LinkedIn'><img src="https://cdn.fastly.picmonkey.com/content4/previews/icons_linkedin/icons_linkedin_11_550.png" alt="LinkedIn" style={{ width: "7em", marginTop: '0.25em', marginLeft: '1em', alignContent: 'flex-end' }} ></img></a>
 
 
@@ -83,7 +83,7 @@ export class Github extends Component {
                             this.state.repos.map(repo => (
 
                                 <tr key='id'>
-                                    <td><a href={repo.html}><div>{repo.name}</div></a></td>
+                                    <td><a href={repo.html_url}>{repo.name}</a></td>
                                     <td>    {repo.language}</td>
                                     <td>    {repo.created_at.split('-')[0] + '-' + repo.created_at.split('-')[1]}</td>
                                     <td>    {repo.description}</td>
