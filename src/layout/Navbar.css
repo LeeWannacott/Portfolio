@@ -1,12 +1,12 @@
 .navbar {
   margin-top: 1em;
 }
-/* 
-.container {
+
+/* .container {
   background-color: ghostwhite;
   margin-left: 12em;
   margin-top: 0.5em;
-  padding-top: 0.5em;
+  padding-top: 0.5em; 
   padding-bottom: 0.5em;
 } */
 
@@ -29,4 +29,12 @@
   background-color: lightpink;
 }
 
+.react-spinner {
+  -webkit-animation:spin 20s linear infinite;
+  -moz-animation:spin 20s linear infinite;
+  animation:spin 20s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 

@@ -24,7 +24,7 @@ table {
     text-align: top; */
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin-top: 0.25em;
     margin-bottom: 0.25em;
     margin-left: 0;
@@ -42,9 +42,9 @@ table {
 }
 
 .GitHubIcon:hover{
-    background-color:lightblue;
+    background-color:white;
   mix-blend-mode: hard-light;
-  color:purple;
+  color:rgb(34, 0, 155);
 }
 
 table.sortable thead {

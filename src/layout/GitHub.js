@@ -57,7 +57,7 @@ export class Github extends Component {
                             {"Repositories: " + this.state.user.public_repos}<br />
                             {"Stars: " + this.state.stars.length + " "}</p></span>
                     <img src="http://ghchart.rshah.org/be4eb9/LeeWannacott" className="GitHubChart" alt="Lee Wannacott GitHub chart"></img>
-                    <a href="#"><img src="https://media.xconomy.com/wordpress/wp-content/images/2016/06/06161811/github-logo.jpg" alt="LinkedIn" style={{ width: "8em", marginTop: '1em', marginLeft: '1em', alignContent: 'flex-end' }} ></img></a>
+                    <a href="#"><img src="https://media.xconomy.com/wordpress/wp-content/images/2016/06/06161811/github-logo.jpg" alt="GitHub Icon" style={{ width: "8em", marginTop: '1em', marginLeft: '1em', alignContent: 'flex-end' }} ></img></a>
 
 
 

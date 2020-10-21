@@ -15,6 +15,7 @@ export class NavBar extends Component {
       <div>
         <div className="container">
           <nav className="navbar navbar-light navbar-expand-xl" style={{ backgroundColor: "#e3f2fd" }}>
+
             <a className="navbar-brand" href="#">Lee Wannacott</a>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
@@ -25,15 +26,14 @@ export class NavBar extends Component {
                 <li className="nav-item"><Nav.Link className='Nav-link' as={Link} to="/projects">
                   Projects
               </Nav.Link></li>
-                <li className="nav-item"><Nav.Link className='Nav-link' as={Link} to="/projects">
-                  Projects
-              </Nav.Link></li>
                 <li className="nav-item"><Nav.Link className='Nav-link' as={Link} to="/GitHub">
                   Github Statistics
               </Nav.Link></li>
-                <li className="nav-item"><Nav.Link className='Nav-link' as={Link} to="/Contact me">
+                <li className="nav-item"><Nav.Link className='Nav-link' as={Link} to="/Contact">
                   Contact
               </Nav.Link></li>
+
+                <img src='https://cdn.auth0.com/blog/react-js/react.png' className='react-spinner' style={{ width: '3em', marginLeft: '34em' }}></img>
               </ul>
             </div>
           </nav>
@@ -44,7 +44,7 @@ export class NavBar extends Component {
             <Route exact path="/" component={Home} />
             <Route path="/projects" component={Projects} />
             <Route path="/GitHub" component={GitHub} />
-            <Route path="/Contact me" component={Contact} />
+            <Route path="/Contact" component={Contact} />
           </Switch>
         </div>
 

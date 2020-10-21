@@ -3,6 +3,9 @@
     color: rgb(31, 31, 82);
     margin-top: 1em;
 }
+
 .hoverimages:hover{
-      mix-blend-mode:hard-light;
+    background-color: rgb(241, 227, 92);
+      mix-blend-mode:soft-light;
+      color: rgb(243, 158, 243);
 }
