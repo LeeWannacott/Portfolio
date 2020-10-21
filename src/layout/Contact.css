@@ -1,0 +1,8 @@
+.heading{
+    text-align: left;
+    color: rgb(31, 31, 82);
+    margin-top: 1em;
+}
+.hoverimages:hover{
+      mix-blend-mode:hard-light;
+}

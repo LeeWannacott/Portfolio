@@ -57,7 +57,7 @@ export class Github extends Component {
                             {"Repositories: " + this.state.user.public_repos}<br />
                             {"Stars: " + this.state.stars.length + " "}</p></span>
                     <img src="http://ghchart.rshah.org/be4eb9/LeeWannacott" className="GitHubChart" alt="Lee Wannacott GitHub chart"></img>
-                    <a href="https://www.linkedin.com/in/lee-wannacott-64289b174/" className='LinkedIn'><img src="https://cdn.fastly.picmonkey.com/content4/previews/icons_linkedin/icons_linkedin_11_550.png" alt="LinkedIn" style={{ width: "7em", marginTop: '0.25em', marginLeft: '1em', alignContent: 'flex-end' }} ></img></a>
+                    <a href="#"><img src="https://media.xconomy.com/wordpress/wp-content/images/2016/06/06161811/github-logo.jpg" alt="LinkedIn" style={{ width: "8em", marginTop: '1em', marginLeft: '1em', alignContent: 'flex-end' }} ></img></a>
 
 
 
@@ -75,7 +75,7 @@ export class Github extends Component {
                             <th>Open issues</th>
                             <th>Watchers</th>
                             <th>Stars</th>
-                            <th>Size</th>
+                            <th>Size (MB)</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -91,7 +91,7 @@ export class Github extends Component {
                                     <td>    {repo.open_issues}</td>
                                     <td>    {repo.watchers}</td>
                                     <td>    {repo.stargazers_count}</td>
-                                    <td>    {Math.round(repo.size / 1000) + 'MB'}</td>
+                                    <td>    {Math.round(repo.size / 1000)}</td>
                                 </tr>
                             ))
                         }

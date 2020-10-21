@@ -11,7 +11,7 @@
 } */
 
 .navbar-brand {
-  background-color: hsl(120, 46%, 78%);
+  background-color: hsl(0, 0%, 100%);
   
   padding-right: 1em;
   padding-left: 1em;
@@ -20,7 +20,6 @@
 }
 .nav-item {
   background-color: lightcyan;
- 
   border-style: double;
   border-color: lightseagreen;
   

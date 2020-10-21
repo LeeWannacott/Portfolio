@@ -6,7 +6,7 @@ import { BrowserRouter as Router } from 'react-router-dom'
 import { Navbar, Nav, Form, FormControl, Button } from "react-bootstrap";
 import Home from './Home'
 import GitHub from './GitHub';
-
+import Contact from './Contact'
 
 export class NavBar extends Component {
   render() {
@@ -31,7 +31,7 @@ export class NavBar extends Component {
                 <li className="nav-item"><Nav.Link className='Nav-link' as={Link} to="/GitHub">
                   Github Statistics
               </Nav.Link></li>
-                <li className="nav-item"><Nav.Link className='Nav-link' as={Link} to="/projects">
+                <li className="nav-item"><Nav.Link className='Nav-link' as={Link} to="/Contact me">
                   Contact
               </Nav.Link></li>
               </ul>
@@ -44,11 +44,11 @@ export class NavBar extends Component {
             <Route exact path="/" component={Home} />
             <Route path="/projects" component={Projects} />
             <Route path="/GitHub" component={GitHub} />
+            <Route path="/Contact me" component={Contact} />
           </Switch>
         </div>
 
       </div>
-
 
     )
   }
