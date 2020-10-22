@@ -35,16 +35,19 @@ table {
     margin-top: 0.25em;
 
 }
+
 .LinkedIn:hover{
     background-color:lightblue;
   mix-blend-mode: hard-light;
   color:purple;
 }
-
+.GitHubIcon{
+  width:7em;
+}
 .GitHubIcon:hover{
-    background-color:white;
-  mix-blend-mode: hard-light;
-  color:rgb(34, 0, 155);
+    background-color:#ffffff;
+    mix-blend-mode: hard-light;
+  color:#1f1616;
 }
 
 table.sortable thead {

@@ -1,14 +1,16 @@
-import React, { Component } from 'react'
-import Projects from './Projects';
-import './Navbar.css';
-import { Link, Route, NavLink, Switch } from 'react-router-dom';
+import React, { Component, useCallback } from 'react'
+import { Link, Route, NavLink, Switch, match } from 'react-router-dom';
 import { BrowserRouter as Router } from 'react-router-dom'
 import { Navbar, Nav, Form, FormControl, Button } from "react-bootstrap";
+import './Navbar.css';
 import Home from './Home'
+import Projects from './Projects';
 import GitHub from './GitHub';
 import Contact from './Contact'
 
 export class NavBar extends Component {
+
+
   render() {
     return (
 

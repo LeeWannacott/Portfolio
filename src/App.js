@@ -11,8 +11,10 @@ function App() {
 
     <div className="App">
 
+
       <header><NavBar /></header>
       <footer></footer>
+
     </div>
   );
 }

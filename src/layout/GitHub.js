@@ -49,7 +49,7 @@ export class Github extends Component {
 
                 { console.log(this.state.stars.length)}
                 < div className="bioInfo" >
-                    <a href={this.state.user.html_url} className='GitHubIcon'><img src={this.state.user.avatar_url} style={{ width: "7em" }}></img></a>
+                    <a href={this.state.user.html_url} className='GitHubIcon'><img src={this.state.user.avatar_url} className='GitHubIcon'></img></a>
                     <span style={{ textAlign: 'left', marginLeft: '1em', marginTop: ' 0.5em', marginRight: '1em' }}>
                         <p>
                             {"Following: " + this.state.user.following + " "}<br />
