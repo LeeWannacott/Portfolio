@@ -18,14 +18,14 @@ export class NavBar extends Component {
         <div className="container">
           <nav className="navbar navbar-light navbar-expand-xl" style={{ backgroundColor: "#e3f2fd" }}>
 
-            <a className="navbar-brand" href="#">Lee Wannacott</a>
+            <a className="navbar-brand">Lee Wannacott</a>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav">
                 {/* Navbar items */}
-                <li className="nav-item"><Nav.Link className='Nav-link' as={Link} to="/projects">
+                <li className="nav-item"><Nav.Link className='Nav-link' as={Link} to="/Projects">
                   Projects
               </Nav.Link></li>
                 <li className="nav-item"><Nav.Link className='Nav-link' as={Link} to="/GitHub">
@@ -44,7 +44,7 @@ export class NavBar extends Component {
         <div>
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route path="/projects" component={Projects} />
+            <Route path="/Projects" component={Projects} />
             <Route path="/GitHub" component={GitHub} />
             <Route path="/Contact" component={Contact} />
           </Switch>
