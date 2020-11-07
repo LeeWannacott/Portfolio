@@ -15,7 +15,7 @@ export class Github extends Component {
 
     componentDidMount() {
         const script = document.createElement("script");
-        script.src = "https://www.kryogenix.org/code/browser/sorttable/sorttable.js";
+        script.src = "https://leewannacott.github.io/table-sort-js/#/.js";
         script.async = true;
         document.body.appendChild(script);
 
@@ -65,7 +65,7 @@ export class Github extends Component {
 
                 <h6 style={{ textAlign: 'left', marginTop: '0.25em' }}>Statistics on public repositories pulled from the GitHub API v3:</h6>
 
-                <table id="myTable" className="sortable">
+                <table className="table-sort">
                     <thead>
                         <tr><th>Repository Name</th>
                             <th>Language</th>

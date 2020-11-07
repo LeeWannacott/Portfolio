@@ -50,11 +50,11 @@ table {
   color:#1f1616;
 }
 
-table.sortable thead {
+/* table.table-sort thead {
   background-color:#eee;
   color:#666666;
   font-weight: bold;
   cursor: default;
-}
+} */
 
 

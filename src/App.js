@@ -10,11 +10,8 @@ function App() {
   return (
 
     <div className="App">
-
-
       <header><NavBar /></header>
       <footer></footer>
-
     </div>
   );
 }
