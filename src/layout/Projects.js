@@ -15,8 +15,8 @@ export class Projects extends Component {
                 <img src='https://raw.githubusercontent.com/LeeWannacott/tweet-repair-game-django/master/Picture_of_tweet_repair_game.png' style={{ width: '70em' }} className='projectimages'></img>
 
                 <h2 className="display-4">Image Selector.
-                <a href='https://github.com/LeeWannacott/image-selector-opencv-python/blob/master/image_selector_from_video.py'><button className='btn btn-light' onclick="www.google.com">View Source Code.</button></a>
-                    <a href='https://github.com/LeeWannacott/image-selector-opencv-python'><button className='btn btn-light' onclick="window.location.href='www.google.com'">View Github Page.</button></a>
+                <a href='https://github.com/LeeWannacott/image-selector-opencv-python/blob/master/image_selector_from_video.py'><button className='btn btn-light' onClick="www.google.com">View Source Code.</button></a>
+                    <a href='https://github.com/LeeWannacott/image-selector-opencv-python'><button className='btn btn-light' onClick="window.location.href='www.google.com'">View Github Page.</button></a>
                 </h2>
                 <hr></hr>
                 <p>Speeds up image selection, tagging and bounding boxing of relevant images to then use in machine learning models.</p>

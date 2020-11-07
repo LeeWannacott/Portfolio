@@ -16,7 +16,9 @@ export class Github extends Component {
     componentDidMount() {
         const script = document.createElement("script");
         script.src = "https://leewannacott.github.io/table-sort-js/#/.js";
+        script.type = "text/javascript"
         script.async = true;
+        
         document.body.appendChild(script);
 
         this.setState({ loading: true })
@@ -44,7 +46,7 @@ export class Github extends Component {
         return (
 
 
-            <div class='container' >
+            <div className='container' >
 
 
                 { console.log(this.state.stars.length)}
@@ -82,7 +84,7 @@ export class Github extends Component {
                         {
                             this.state.repos.map(repo => (
 
-                                <tr key='id'>
+                                <tr>
                                     <td><a href={repo.html_url}>{repo.name}</a></td>
                                     <td>    {repo.language}</td>
                                     <td>    {repo.created_at.split('-')[0] + '-' + repo.created_at.split('-')[1]}</td>
