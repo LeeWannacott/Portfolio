@@ -17,10 +17,10 @@ export class Github extends Component {
 
     componentDidMount() {
         const script = document.createElement("script");
-        script.type = "text/javascript"
         script.src = "https://leewannacott.github.io/table-sort-js/#/.js";
-        script.type = "text/javascript"
         script.async = true;
+        script.type = "application/javascript"
+
         
         document.body.appendChild(script);
 
