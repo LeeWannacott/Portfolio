@@ -9,7 +9,7 @@ export class Projects extends Component {
                 <h2 className="display-4">Tweet Repair Game.
                 <a href='https://tweet-repair-game.herokuapp.com/'><button className='btn btn-light'>View Live Example.</button></a>
                     <a href='https://github.com/LeeWannacott/tweet-repair-game-django'><button className='btn btn-light'>View GitHub Page.</button></a>
-                </h2>
+                </h2> 
                 <hr></hr>
                 <p>Tweet repair game started during Global Game Jam 2020. Uses Django, Javascript and the Twitter API.</p>
                 <img src='https://raw.githubusercontent.com/LeeWannacott/tweet-repair-game-django/master/Picture_of_tweet_repair_game.png' style={{ width: '70em' }} className='projectimages'></img>

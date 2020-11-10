@@ -19,8 +19,8 @@ export class Github extends Component {
 
     componentDidMount() {
         const script = document.createElement("script");
-        script.type = 'text/javascript';
-        script.src = "https://leewannacott.github.io/table-sort-js/#/.js";
+        // script.type = 'text/javascript';
+        script.src = "http://localhost:3000/table-sort-js#/.js";
         script.async = true;
         document.body.appendChild(script);
 
