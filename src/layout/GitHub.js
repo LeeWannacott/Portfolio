@@ -21,9 +21,7 @@ export class Github extends Component {
         const script = document.createElement("script");
         script.type = 'text/javascript';
         script.src = "https://leewannacott.github.io/table-sort-js/#/.js";
-        script.type = 'text/javascript';
         script.async = true;
-        script.type = 'text/javascript';
         document.body.appendChild(script);
 
         this.setState({ loading: true })
@@ -54,7 +52,7 @@ export class Github extends Component {
             <div className='container' >
 
 
-                { console.log(this.state.stars.length)}
+         
                 < div className="bioInfo" >
                     <a href={this.state.user.html_url} className='GitHubIcon'><img src={this.state.user.avatar_url} className='GitHubIcon'></img></a>
                     <span style={{ textAlign: 'left', marginLeft: '1em', marginTop: ' 0.5em', marginRight: '1em' }}>
