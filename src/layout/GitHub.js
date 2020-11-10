@@ -4,6 +4,8 @@ import { isCompositeComponent } from 'react-dom/test-utils'
 import './GitHub.css';
 import $ from 'jquery';
 // import Sort from './table-sort';
+
+// The folowing works:
 // import './table-sort'
 
 export class Github extends Component {
@@ -17,11 +19,11 @@ export class Github extends Component {
 
     componentDidMount() {
         const script = document.createElement("script");
+        script.type = 'text/javascript';
         script.src = "https://leewannacott.github.io/table-sort-js/#/.js";
+        script.type = 'text/javascript';
         script.async = true;
-        script.type = "application/javascript"
-
-        
+        script.type = 'text/javascript';
         document.body.appendChild(script);
 
         this.setState({ loading: true })
