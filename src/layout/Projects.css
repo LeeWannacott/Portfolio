@@ -13,7 +13,10 @@ p{
 .container{
     margin-bottom: 2em;
 }
+.h2{
+    text-align: left;
+}
 
-article{
+.project{
     margin-top: 2em;
 }

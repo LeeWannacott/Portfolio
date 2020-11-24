@@ -15,7 +15,7 @@ export class Projects extends Component {
                 <img src='https://raw.githubusercontent.com/LeeWannacott/image-selector-opencv-python/master/Example_of_use.png' style={{ width: '70em' }} className='projectimages'></img>
                 </article>
 
-                <article clasName='project'>
+                <article className='project'>
                 <h2 className="display">Mark-Your-Spreadsheet.
                 <a href='https://github.com/LeeWannacott/MYS-Mark-Your-Spreadsheet'><button className='btn btn-light'>View GitHub Page.</button></a>
                 </h2>
@@ -24,7 +24,7 @@ export class Projects extends Component {
                 <img src='https://raw.githubusercontent.com/LeeWannacott/MYS-Mark-Your-Spreadsheet/master/CompareAllExample.png' style={{ width: '70em' }} className='projectimages'></img>
                 </article>
 
-                <article clasName='project'>
+                <article className='project'>
                 <h2 className="display">Tweet Repair Game.
                 <a href='https://tweet-repair-game.herokuapp.com/'><button className='btn btn-light'>View Live Example.</button></a>
                     <a href='https://github.com/LeeWannacott/tweet-repair-game-django'><button className='btn btn-light'>View GitHub Page.</button></a>
@@ -34,7 +34,7 @@ export class Projects extends Component {
                 <img src='https://raw.githubusercontent.com/LeeWannacott/tweet-repair-game-django/master/Picture_of_tweet_repair_game.png' style={{ width: '70em' }} className='projectimages'></img>
                 </article>
 
-                <article clasName='project'>
+                <article className='project'>
                 <h2 className="display"> table-sort-js
                 <a href='https://leewannacott.github.io/Portfolio/#/GitHub'><button className='btn btn-light'>View Live Example.</button></a>
                     <a href='https://github.com/LeeWannacott/table-sort-js'><button className='btn btn-light'>View GitHub Page.</button></a>
