@@ -2,10 +2,8 @@ import axios from 'axios'
 import React, { Component } from 'react'
 import { isCompositeComponent } from 'react-dom/test-utils'
 import './GitHub.css';
-import $ from 'jquery';
-// import Sort from './table-sort';
+// import $ from 'jquery';
 
-// The folowing works:
 // import './table-sort'
 
 export class Github extends Component {
@@ -19,8 +17,7 @@ export class Github extends Component {
 
     componentDidMount() {
         const script = document.createElement("script");
-        script.type = 'text/javascript';
-        script.src = "https://leewannacott.github.io/table-sort-js/#/.js";
+        script.src = "https://leewannacott.github.io/table-sort-js/table-sort.js";
         script.async = true;
         document.body.appendChild(script);
         
@@ -75,13 +72,13 @@ export class Github extends Component {
                     <thead>
                         <tr><th>Repository Name</th>
                             <th>Language</th>
-                            <th>Created</th>
+                            <th className='order-by-desc'>Created</th>
                             <th>Description</th>
-                            <th>Forks</th>
-                            <th>Open issues</th>
-                            <th>Watchers</th>
-                            <th>Stars</th>
-                            <th>Size (MB)</th>
+                            <th className='order-by-desc'>Forks</th>
+                            <th className='order-by-desc'>Open issues</th>
+                            <th className='order-by-desc'>Watchers</th>
+                            <th className='order-by-desc'>Stars</th>
+                            <th className='order-by-desc'>Size (MB)</th>
                         </tr>
                     </thead>
                     <tbody>
