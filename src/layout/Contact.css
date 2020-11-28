@@ -10,7 +10,7 @@
     margin-Left: 1em;
 }
 .hover-images:hover{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 200, 255);
       mix-blend-mode:hard-light;
       color: rgb(182, 55, 182);
 }

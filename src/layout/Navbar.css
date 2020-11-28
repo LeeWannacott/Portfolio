@@ -1,20 +1,13 @@
 .navbar {
-  margin-top: 1em;
+  margin-top: 1rem;
 }
 
-/* .container {
-  background-color: ghostwhite;
-  margin-left: 12em;
-  margin-top: 0.5em;
-  padding-top: 0.5em; 
-  padding-bottom: 0.5em;
-} */
 
 .navbar-brand {
   background-color: hsl(0, 0%, 100%);
   
-  padding-right: 1em;
-  padding-left: 1em;
+  padding-right: 1rem;
+  padding-left: 1rem;
   border-style: double;
   border-color: lightseagreen;
 }

@@ -7,14 +7,14 @@ table {
   }
   
   td{
-    border: 1px solid #4ebe8a;
+    border: 1px solid black;
     text-align: left;
     padding: 1em;
   }
 
   th {
       background-color: #f8e5e5;
-      border: 1px solid #4ebe8a;
+      border: 1px solid black;
       text-align: left;
       padding: 1em;
   }
