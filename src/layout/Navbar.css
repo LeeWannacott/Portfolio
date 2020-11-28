@@ -2,7 +2,9 @@
   margin-top: 1rem;
 }
 
-
+.navbar-nav{
+     display:flex;
+}
 .navbar-brand {
   background-color: hsl(0, 0%, 100%);
   
@@ -15,7 +17,8 @@
   background-color: lightcyan;
   border-style: double;
   border-color: lightseagreen;
-  
+  display:flex;
+  flex-direction:row;
 }
 
 
