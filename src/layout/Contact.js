@@ -42,9 +42,9 @@ export class Contact extends Component {
             <div className="container">
                 <h6 className='heading'>Email: WannacottL@gmail.com</h6>
                 <hr></hr>
-                <a href="https://www.linkedin.com/in/lee-wannacott-64289b174/" ><img src={process.env.PUBLIC_URL + '/LinkedIn.png'} className="hover-images" style={{ width: "10em", marginTop: '0.25em', marginLeft: '1em' }} ></img></a>
-                <a href="https://github.com/LeeWannacott" ><img src={process.env.PUBLIC_URL + '/GithubLogo.jpeg'} className='hover-images' alt="https://github.com/LeeWannacott" style={{ width: "10em", marginTop: '0.25em', marginLeft: '0.75em'}} ></img></a>
-                <a href="mailto:WannacottL@gmail.com" ><img src={process.env.PUBLIC_URL + '/Gmail.png'} className="hover-images" alt="mailto:WannacottL@gmail.com" style={{ width: "8em", marginTop: '0.25em', marginLeft: '0.1em' ,marginRight:'0.1em'}}></img></a>
+                <a href="https://www.linkedin.com/in/lee-wannacott-64289b174/" ><img src={process.env.PUBLIC_URL + '/LinkedIn.png'} className="contact-images" style={{ width: "10em", marginTop: '0.25em', marginLeft: '1em' }} ></img></a>
+                <a href="https://github.com/LeeWannacott" ><img src={process.env.PUBLIC_URL + '/GithubLogo.jpeg'} className="contact-images" alt="https://github.com/LeeWannacott" style={{ width: "10em", marginTop: '0.25em', marginLeft: '0.75em'}} ></img></a>
+                <a href="mailto:WannacottL@gmail.com" ><img src={process.env.PUBLIC_URL + '/Gmail.png'} className="contact-images" alt="mailto:WannacottL@gmail.com" style={{ width: "8em", marginTop: '0.25em', marginLeft: '0.1em' ,marginRight:'0.1em'}}></img></a>
                 {/* 
                 <h2 className='heading'>Contact via form:</h2><hr></hr>
 
