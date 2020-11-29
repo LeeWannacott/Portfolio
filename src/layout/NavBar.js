@@ -35,7 +35,7 @@ export class NavBar extends Component {
                   Contact
               </Nav.Link></li>
 
-                <img src='https://cdn.auth0.com/blog/react-js/react.png' className='react-spinner' style={{ width: '3em', marginLeft: '34em' }}></img>
+                <img src='https://cdn.auth0.com/blog/react-js/react.png' className='react-spinner' style={{ width: '3rem', marginLeft: '34rem' }}></img>
               </ul>
             </div>
           </nav>
