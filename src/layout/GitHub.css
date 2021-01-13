@@ -34,9 +34,9 @@ table {
 .GithubOcto{ 
     width:9em;
 }
-.GithubOcto:hover { 
-    opacity:.9;
-}
+/*.GithubOcto:hover { */
+    /*opacity:.9;*/
+/*}*/
 .GitHubChart{
     /*margin-left: 0.10em;*/
     /*margin-top: 0.25em;*/
@@ -48,21 +48,21 @@ table {
     padding-left:1em;
 }
 
-.LinkedIn:hover{
-    background-color:lightblue;
-    mix-blend-mode: hard-light;
-    color:purple;
-}
+/*.LinkedIn:hover{*/
+    /*background-color:lightblue;*/
+    /*mix-blend-mode: hard-light;*/
+    /*color:purple;*/
+/*}*/
 .GitHubIcon{
   width:7em;
 }
 
 
-.GitHubIcon:hover {
-    opacity: .9;
-    background-color:#ffffff;
-    color:#1f1616
-}
+/*.GitHubIcon:hover {*/
+    /*opacity: .9;*/
+    /*background-color:#ffffff;*/
+    /*color:#1f1616*/
+/*}*/
 
 /* 
 Max width before this PARTICULAR table gets nasty
