@@ -1,42 +1,42 @@
-.navbar {
-  margin-top: 1rem;
-}
+/*.navbar {*/
+  /*margin-top: 1rem;*/
+/*}*/
 
-.navbar-nav{
-     display:flex;
-}
-.navbar-brand {
-  background-color: hsl(0, 0%, 100%);
+/*.navbar-nav{*/
+     /*display:flex;*/
+/*}*/
+/*.navbar-brand {*/
+  /*background-color: hsl(0, 0%, 100%);*/
   
-  padding-right: 1rem;
-  padding-left: 1rem;
-  border-style: double;
-  border-color: lightseagreen;
-}
-.nav-item {
-  background-color: lightcyan;
-  border-style: double;
-  border-color: lightseagreen;
-  display:flex;
-  flex-direction:row;
-}
+  /*padding-right: 1rem;*/
+  /*padding-left: 1rem;*/
+  /*border-style: double;*/
+  /*border-color: lightseagreen;*/
+/*}*/
+/*.nav-item {*/
+  /*background-color: lightcyan;*/
+  /*border-style: double;*/
+  /*border-color: lightseagreen;*/
+  /*display:flex;*/
+  /*flex-direction:row;*/
+/*}*/
 
 
-.nav-item:hover{
-  background-color: lightpink;
-}
+/*.nav-item:hover{*/
+  /*background-color: lightpink;*/
+/*}*/
 
-@media (prefers-reduced-motion: no-preference) {
-  .react-spinner {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/*@media (prefers-reduced-motion: no-preference) {*/
+  /*.react-spinner {*/
+    /*animation: App-logo-spin infinite 20s linear;*/
+  /*}*/
+/*}*/
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/*@keyframes App-logo-spin {*/
+  /*from {*/
+    /*transform: rotate(0deg);*/
+  /*}*/
+  /*to {*/
+    /*transform: rotate(360deg);*/
+  /*}*/
+/*}*/

@@ -7,7 +7,6 @@ import Home from './Home'
 import Projects from './Projects';
 import GitHub from './GitHub';
 import Contact from './Contact'
-
 export class NavBar extends Component {
 
 
@@ -17,26 +16,28 @@ export class NavBar extends Component {
       <div>
         <div className="container">
           <nav className="navbar navbar-light navbar-expand-xl" style={{ backgroundColor: "#e3f2fd" }}>
-
-            <a className="navbar-brand">Lee Wannacott</a>
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <div className="container-fluid">
+                <a className="navbar-brand" href="#">Lee Wannacott</a>
+                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav">
                 {/* Navbar items */}
-                <li className="nav-item"><Nav.Link className='Nav-link' as={Link} to="/Projects">
-                  Projects
-              </Nav.Link></li>
-                <li className="nav-item"><Nav.Link className='Nav-link' as={Link} to="/GitHub">
+                
+        <li className="nav-item">
+            <Nav.Link className='nav-link' as={Link} to="/Projects">
+                Projects
+            </Nav.Link>
+        </li>
+                <li className="nav-item"><Nav.Link className='nav-link' as={Link} to="/GitHub">
                   Github Statistics
               </Nav.Link></li>
-                <li className="nav-item"><Nav.Link className='Nav-link' as={Link} to="/Contact">
+                <li className="nav-item"><Nav.Link className='nav-link' as={Link} to="/Contact">
                   Contact
               </Nav.Link></li>
-
-                <img src='https://cdn.auth0.com/blog/react-js/react.png' className='react-spinner' style={{ width: '3rem', marginLeft: '34rem' }}></img>
               </ul>
+            </div>
             </div>
           </nav>
         </div>

@@ -47,25 +47,27 @@ export class Github extends Component {
         return (
 
 
+            <div> 
+
+
             <div className='container' >
-
-
          
                 < div className="bioInfo" >
                     <a href={this.state.user.html_url} className='GitHubIcon'><img src={this.state.user.avatar_url} className='GitHubIcon'></img></a>
-                    <span style={{ textAlign: 'left', marginLeft: '1em', marginTop: ' 0.5em', marginRight: '1em' }}>
-                        <p>
+
+                    <div className="githubBasicStats">
+                    <span>
+                        <p className="githubBasicStats">
                             {"Following: " + this.state.user.following + " "}<br />
                             {"Followers: " + this.state.user.followers + " "}<br />
                             {"Repositories: " + this.state.user.public_repos}<br />
-                            {"Stars: " + this.state.stars.length + " "}</p></span>
-                    <img src="http://ghchart.rshah.org/be4eb9/LeeWannacott" className="GitHubChart" alt="Lee Wannacott GitHub chart"></img>
-                    <a href="#"><img src="https://media.xconomy.com/wordpress/wp-content/images/2016/06/06161811/github-logo.jpg" alt="GitHub Icon" style={{ width: "8em", marginTop: '1em', marginLeft: '1em', alignContent: 'flex-end' }} ></img></a>
-
-
+                            {"Stars: " + this.state.stars.length + " "}</p>
+                    </span>
+                    </div>
+                    <a href="#" className="GithubOcto"><img src="https://media.xconomy.com/wordpress/wp-content/images/2016/06/06161811/github-logo.jpg" className="GithubOcto" alt="GitHub Icon" ></img></a>
 
                 </div>
-
+<hr></hr>
                 <h6 style={{ textAlign: 'left', marginTop: '0.25em' }}>Statistics on public repositories pulled from the GitHub API v3:</h6>
 
                 <table className="table-sort">
@@ -101,7 +103,7 @@ export class Github extends Component {
                     </tbody>
                 </table>
 
-
+            </div>
             </div >
 
         )

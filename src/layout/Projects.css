@@ -20,3 +20,9 @@ p{
 .project{
     margin-top: 2em;
 }
+.projectImages {
+    max-width: 100%; 
+    display:block; 
+    height: auto;
+}
+

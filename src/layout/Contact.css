@@ -4,13 +4,17 @@
     margin-top: 1em;
 }
 
-.hover-images{
-    width: 8em;
-    margin-top: 0.25em;
-    margin-Left: 1em;
+.contact-github:hover {
+    opacity: .8;
 }
-.hover-images:hover{
-    background-color: rgb(255, 200, 255);
-      mix-blend-mode:hard-light;
-      color: rgb(182, 55, 182);
+
+.contact-email:hover {
+    opacity: .8;
+}
+
+.contact-linked:hover {
+    opacity: .8;
+}
+
+.contactIcons {
 }

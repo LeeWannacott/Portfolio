@@ -1,9 +1,9 @@
 table {
+    display:table;
     font-family: arial;
-    border-collapse: collapse;
+    /*border-collapse: collapse;*/
     width: 100%;
     margin-bottom: 2em;
-    
   }
   
   td{
@@ -23,38 +23,105 @@ table {
     /* text-align: left;
     text-align: top; */
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
     flex-wrap: nowrap;
-    margin-top: 0.25em;
-    margin-bottom: 0.25em;
-    margin-left: 0;
+    /*margin-top: 0.25em;*/
+    /*margin-bottom: 0.25em;*/
+    /*margin-left: 0;*/
     
 }
+.GithubOcto{ 
+    width:9em;
+}
+.GithubOcto:hover { 
+    opacity:.9;
+}
 .GitHubChart{
-    margin-left: 0.10em;
-    margin-top: 0.25em;
+    /*margin-left: 0.10em;*/
+    /*margin-top: 0.25em;*/
+    /*flex-shrink: 1;*/
 
+}
+.githubBasicStats{
+    margin-right:auto;
+    padding-left:1em;
 }
 
 .LinkedIn:hover{
     background-color:lightblue;
-  mix-blend-mode: hard-light;
-  color:purple;
+    mix-blend-mode: hard-light;
+    color:purple;
 }
 .GitHubIcon{
   width:7em;
 }
-.GitHubIcon:hover{
+
+
+.GitHubIcon:hover {
+    opacity: .9;
     background-color:#ffffff;
-    mix-blend-mode: hard-light;
-  color:#1f1616;
+    color:#1f1616
 }
 
-/* table.table-sort thead {
-  background-color:#eee;
-  color:#666666;
-  font-weight: bold;
-  cursor: default;
-} */
+/* 
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media 
+only screen and (max-width: 1060px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
 
-
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+	
+  th {
+      background-color: #f8e5e5;
+      border: 1px solid black;
+      text-align: left;
+      padding: 1em;
+  }
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+	
+	/*
+	Label the data
+	*/
+	td:nth-of-type(1):before { content: "Repository Name"; }
+	td:nth-of-type(2):before { content: "Language"; }
+	td:nth-of-type(3):before { content: "Created"; }
+	td:nth-of-type(4):before { content: "Description"; }
+	td:nth-of-type(5):before { content: "Forks"; }
+	td:nth-of-type(6):before { content: "Open Issues"; }
+	td:nth-of-type(7):before { content: "Watchers"; }
+	td:nth-of-type(8):before { content: "Stars"; }
+	td:nth-of-type(9):before { content: "Size(MB)"; }
+}
