@@ -47,11 +47,11 @@ export class Github extends Component {
         return (
 
 
-            <div> 
+            <div className="tableScroll"> 
 
 
             <div className='container' >
-         
+            <hr></hr> 
                 < div className="bioInfo" >
                     <a href={this.state.user.html_url} className='GitHubIcon'><img src={this.state.user.avatar_url} className='GitHubIcon'></img></a>
 
@@ -69,7 +69,7 @@ export class Github extends Component {
                 </div>
 <hr></hr>
                 <h6 style={{ textAlign: 'left', marginTop: '0.25em' }}>Statistics on public repositories pulled from the GitHub API v3:</h6>
-
+                <div>
                 <table className="table-sort">
                     <thead>
                         <tr><th>Repository Name</th>
@@ -102,8 +102,8 @@ export class Github extends Component {
                         }
                     </tbody>
                 </table>
-
-            </div>
+                </div>
+                </div>
             </div >
 
         )

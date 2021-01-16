@@ -1,23 +1,28 @@
+.tableScroll {
+    overflow-y: auto;
+    overflow:auto;
+    height:90vh;
+}
 table {
-    display:table;
+    display:block;
     font-family: arial;
     /*border-collapse: collapse;*/
     width: 100%;
     margin-bottom: 2em;
-  }
-  
-  td{
-    border: 1px solid black;
-    text-align: left;
-    padding: 1em;
-  }
+}
 
-  th {
-      background-color: #f8e5e5;
-      border: 1px solid black;
-      text-align: left;
-      padding: 1em;
-  }
+td{
+border: 1px solid black;
+text-align: left;
+padding: 1em;
+}
+
+th {
+  background-color: #f8e5e5;
+  border: 1px solid black;
+  text-align: left;
+  padding: 1em;
+}
   
 .bioInfo{
     /* text-align: left;
@@ -70,8 +75,8 @@ This query will take effect for any screen smaller than 760px
 and also iPads specifically.
 */
 @media 
-only screen and (max-width: 1060px),
-(min-device-width: 768px) and (max-device-width: 1024px)  {
+only screen and (max-width: 720px),
+(min-device-width: 540px) and (max-device-width: 720px)  {
 
 	/* Force table to not be like tables anymore */
 	table, thead, tbody, th, td, tr { 
@@ -112,6 +117,7 @@ only screen and (max-width: 1060px),
 		white-space: nowrap;
 	}
 	
+
 	/*
 	Label the data
 	*/
