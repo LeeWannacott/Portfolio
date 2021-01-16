@@ -1,7 +1,6 @@
 import React, { Component, useCallback } from 'react'
 import { Link, Route, NavLink, Switch, match } from 'react-router-dom';
-import { BrowserRouter as Router } from 'react-router-dom'
-import { Navbar, Nav, Form, FormControl, Button } from "react-bootstrap";
+import {  Nav ,Navbar,NavDropdown,Form, FormControl, Button } from "react-bootstrap";
 import './Navbar.css';
 import Home from './Home'
 import Projects from './Projects';
@@ -13,35 +12,20 @@ export class NavBar extends Component {
   render() {
     return (
 
-      <div>
-        <div className="container">
-          <nav className="navbar navbar-light navbar-expand-xl" style={{ backgroundColor: "#e3f2fd" }}>
-                <div className="container-fluid">
-                <a className="navbar-brand" href="#">Lee Wannacott</a>
-                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse" id="navbarNav">
-              <ul className="navbar-nav">
-                {/* Navbar items */}
-                
-        <li className="nav-item">
-            <Nav.Link className='nav-link' as={Link} to="/Projects">
-                Projects
-            </Nav.Link>
-        </li>
-                <li className="nav-item"><Nav.Link className='nav-link' as={Link} to="/GitHub">
-                  Github Statistics
-              </Nav.Link></li>
-                <li className="nav-item"><Nav.Link className='nav-link' as={Link} to="/Contact">
-                  Contact
-              </Nav.Link></li>
-              </ul>
-            </div>
-            </div>
-          </nav>
-        </div>
-        {/* Routing */}
+      <div className="container">
+        
+        <Navbar className="nav-color" expand="lg" variant="light">  
+          <Navbar.Brand >Lee Wannacott</Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="mr-auto">
+                <Nav.Link as={Link} to="/Projects"> Projects </Nav.Link>
+                <Nav.Link as={Link} to="/GitHub"> Github Statistics </Nav.Link>
+                <Nav.Link className="nav-link" as={Link} to="/Contact"> Contact </Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Navbar>
+        <br></br>
         <div>
           <Switch>
             <Route exact path="/" component={Home} />
