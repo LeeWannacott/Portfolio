@@ -97,8 +97,9 @@ export class Github extends Component {
                         API v3:
                     </h6>
                     <div>
-                        <table className="table-sort">
-                            <thead>
+
+                        <table className="table table-sort table-bordered table-responsive table-hover">
+                            <thead className="cw-light">
                                 <tr>
                                     <th>Repository Name</th>
                                     <th>Language</th>
@@ -113,7 +114,7 @@ export class Github extends Component {
                                     <th className="order-by-desc">Size (MB)</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody className="table-hover">
                                 {this.state.repos.map((repo) => (
                                     <tr>
                                         <td>

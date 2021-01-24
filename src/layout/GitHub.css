@@ -1,20 +1,6 @@
 .tableScroll {
     overflow-y: auto;
-    overflow:auto;
     height:90vh;
-}
-table {
-    display:block;
-    font-family: arial;
-    /*border-collapse: collapse;*/
-    width: 100%;
-    margin-bottom: 2em;
-}
-
-td{
-border: 1px solid black;
-text-align: left;
-padding: 1em;
 }
 
 th {
@@ -25,27 +11,16 @@ th {
 }
   
 .bioInfo{
-    /* text-align: left;
-    text-align: top; */
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: nowrap;
-    /*margin-top: 0.25em;*/
-    /*margin-bottom: 0.25em;*/
-    /*margin-left: 0;*/
     
 }
 .GithubOcto{ 
     width:9em;
 }
-/*.GithubOcto:hover { */
-    /*opacity:.9;*/
-/*}*/
 .GitHubChart{
-    /*margin-left: 0.10em;*/
-    /*margin-top: 0.25em;*/
-    /*flex-shrink: 1;*/
 
 }
 .githubBasicStats{
@@ -53,21 +28,10 @@ th {
     padding-left:1em;
 }
 
-/*.LinkedIn:hover{*/
-    /*background-color:lightblue;*/
-    /*mix-blend-mode: hard-light;*/
-    /*color:purple;*/
-/*}*/
 .GitHubIcon{
   width:7em;
 }
 
-
-/*.GitHubIcon:hover {*/
-    /*opacity: .9;*/
-    /*background-color:#ffffff;*/
-    /*color:#1f1616*/
-/*}*/
 
 /* 
 Max width before this PARTICULAR table gets nasty
