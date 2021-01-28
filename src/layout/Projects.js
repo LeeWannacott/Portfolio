@@ -92,17 +92,23 @@ export class Projects extends Component {
                         <hr></hr>
                         <a href="https://leewannacott.github.io/Portfolio/#/GitHub">
                             <button className="btn btn-light">
-                                View Live Example.
+                                View live example.
                             </button>
                         </a>
                         <a href="https://github.com/LeeWannacott/table-sort-js">
                             <button className="btn btn-light">
-                                View GitHub Page.
+                                View GitHub page.
                             </button>
                         </a>
                         <a href="https://leewannacott.github.io/table-sort-js/table-sort.js">
                             <button className="btn btn-light">
                                 View source code.
+                            </button>
+
+                        </a>
+                        <a href="https://www.npmjs.com/package/table-sort-js">
+                            <button className="btn btn-light">
+                                View npm page.
                             </button>
                         </a>
                     </h2>
