@@ -6,6 +6,7 @@ import Home from './Home'
 import Projects from './Projects';
 import GitHub from './GitHub';
 import Contact from './Contact'
+import dogecomments from './dogecomments'
 // import LinearProgress from '@material-ui/core/LinearProgress';
 
 export class NavBar extends Component {
@@ -15,7 +16,7 @@ export class NavBar extends Component {
     return (
 
       <div className="container">
-        <Navbar className="nav-color" expand="lg" variant="light">  
+        <Navbar className="nav-color" expand="lg" variant="dark">  
           <Navbar.Brand >Lee Wannacott</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
@@ -34,6 +35,7 @@ export class NavBar extends Component {
             <Route path="/Projects" component={Projects} />
             <Route path="/GitHub" component={GitHub} />
             <Route path="/Contact" component={Contact} />
+            <Route path="/dogecomments" component={dogecomments} />
           </Switch>
         </div>
 

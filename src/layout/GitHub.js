@@ -58,6 +58,7 @@ export class Github extends Component {
                         <a
                             href={this.state.user.html_url}
                             className="GitHubIcon"
+                            target="_blank"
                         >
                             <img
                                 src={this.state.user.avatar_url}
@@ -83,13 +84,7 @@ export class Github extends Component {
                                 </p>
                             </span>
                         </div>
-                        <a href="#" className="GithubOcto">
-                            <img
-                                src="https://media.xconomy.com/wordpress/wp-content/images/2016/06/06161811/github-logo.jpg"
-                                className="GithubOcto"
-                                alt="GitHub Icon"
-                            ></img>
-                        </a>
+                        <div className="GitHubChart"><img className="GitHubChartImg" src="http://ghchart.rshah.org/LeeWannacott" className="GitHubChart" alt="Lee Wannacott GitHub chart"></img></div>
                     </div>
                     <hr></hr>
                     <h6 style={{ textAlign: "left", marginTop: "0.25em" }}>
@@ -109,7 +104,6 @@ export class Github extends Component {
                                     <th className="order-by-desc">
                                         Open issues
                                     </th>
-                                    <th className="order-by-desc">Watchers</th>
                                     <th className="order-by-desc">Stars</th>
                                     <th className="order-by-desc">Size (MB)</th>
                                 </tr>
@@ -118,7 +112,7 @@ export class Github extends Component {
                                 {this.state.repos.map((repo) => (
                                     <tr>
                                         <td>
-                                            <a href={repo.html_url}>
+                                            <a href={repo.html_url} target="_blank">
                                                 {repo.name}
                                             </a>
                                         </td>
@@ -132,7 +126,6 @@ export class Github extends Component {
                                         <td> {repo.description}</td>
                                         <td> {repo.forks}</td>
                                         <td> {repo.open_issues}</td>
-                                        <td> {repo.watchers}</td>
                                         <td> {repo.stargazers_count}</td>
                                         <td> {Math.round(repo.size / 1000)}</td>
                                     </tr>

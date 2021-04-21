@@ -2,6 +2,15 @@
   text-align: center;
 }
 
+div.container{
+  background-color: #052028;
+  padding-bottom: 5px;
+}
+html {
+}
+header {
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -14,7 +23,7 @@
 }
 
 
-@keyframes App-logo-spin {
+@keyframes App-logo-spin { 
   from {
     transform: rotate(0deg);
   }

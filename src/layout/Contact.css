@@ -4,17 +4,31 @@
     margin-top: 1em;
 }
 
-/*.contact-github:hover {*/
-    /*opacity: .8;*/
-/*}*/
+.icon-mail{
+    margin-left: 0.5em;
+}
 
-/*.contact-email:hover {*/
-    /*opacity: .8;*/
-/*}*/
+.icon-linked{
+}
 
-/*.contact-linked:hover {*/
-    /*opacity: .8;*/
-/*}*/
+.icon-github{
+    margin-right: 0.5em;
 
-.contactIcons {
+}
+
+.social-icons a{
+  font-size: 100px;
+  margin-right: 50px;
+	color: #B58900;
+}
+
+.fab:hover {
+  cursor: pointer;
+  color: purple;
+  scale: 1.1;
+}
+.fa:hover {
+  cursor: pointer;
+  color: purple;
+  scale: 1.1;
 }
