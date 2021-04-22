@@ -11,12 +11,12 @@ export class Projects extends Component {
                         tweet-repair-game-django
                         <hr></hr>
                         <a href="https://tweet-repair-game.herokuapp.com/"  target="_blank">
-                            <button className="btn btn-primary">
+                            <button className="btn btn-outline-info">
                                 View Live Example.
                             </button>
                         </a>
                         <a href="https://github.com/LeeWannacott/tweet-repair-game-django"  target="_blank">
-                            <button className="btn btn-primary">
+                            <button className="btn btn-outline-info">
                                 View GitHub Page.
                             </button>
                         </a>
@@ -42,23 +42,23 @@ export class Projects extends Component {
                         table-sort-js
                         <hr></hr>
                         <a href="https://leewannacott.github.io/Portfolio/#/GitHub" target="_blank">
-                            <button className="btn btn-primary">
+                            <button className="btn btn-outline-info">
                                 View live example.
                             </button>
                         </a>
                         <a href="https://github.com/LeeWannacott/table-sort-js" target="_blank">
-                            <button className="btn btn-primary">
+                            <button className="btn btn-outline-info">
                                 View GitHub page.
                             </button>
                         </a>
                         <a href="https://leewannacott.github.io/table-sort-js/table-sort.js"  target="_blank">
-                            <button className="btn btn-primary">
+                            <button className="btn btn-outline-info">
                                 View source code.
                             </button>
 
                         </a>
                         <a href="https://www.npmjs.com/package/table-sort-js"  target="_blank">
-                            <button className="btn btn-primary">
+                            <button className="btn btn-outline-info">
                                 View npm page.
                             </button>
                         </a>
@@ -77,14 +77,14 @@ export class Projects extends Component {
                         <hr></hr>
                         <a href="https://github.com/LeeWannacott/image-selector-opencv-python/blob/master/image_selector_from_video.py" target="_blank">
                             <button
-                                className="btn btn-primary"
+                                className="btn btn-outline-info"
                             >
                                 View Source Code.
                             </button>
                         </a>
                         <a href="https://github.com/LeeWannacott/image-selector-opencv-python" target="_blank">
                             <button
-                                className="btn btn-primary"
+                                className="btn btn-outline-info"
                             >
                                 View Github Page.
                             </button>
@@ -119,7 +119,7 @@ export class Projects extends Component {
                         Mark-Your-Spreadsheet.
                         <hr></hr>
                         <a href="https://github.com/LeeWannacott/MYS-Mark-Your-Spreadsheet" target="_blank">
-                            <button className="btn btn-primary">
+                            <button className="btn btn-outline-info">
                                 View GitHub Page.
                             </button>
                         </a>
@@ -140,12 +140,12 @@ export class Projects extends Component {
                         svg-style
                         <hr></hr>
                         <a href="https://github.com/LeeWannacott/svg-style" target="_blank">
-                            <button className="btn btn-primary">
+                            <button className="btn btn-outline-info">
                                 View GitHub Page.
                             </button>
                         </a>
                         <a href="https://www.npmjs.com/package/svg-style" target="_blank">
-                            <button className="btn btn-primary">
+                            <button className="btn btn-outline-info">
                                 View npm page.
                             </button>
                         </a>
@@ -169,7 +169,7 @@ export class Projects extends Component {
                         nvim-dogecomments
                         <hr></hr>
                         <a href="https://github.com/LeeWannacott/nvim-dogecomments" target="_blank">
-                            <button className="btn btn-primary">
+                            <button className="btn btn-outline-info">
                                 View GitHub Page.
                             </button>
                         </a>

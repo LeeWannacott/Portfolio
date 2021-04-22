@@ -1,6 +1,5 @@
 import axios from "axios";
 import React, { Component } from "react";
-import { isCompositeComponent } from "react-dom/test-utils";
 import "./GitHub.css";
 // import $ from 'jquery';
 
@@ -51,7 +50,7 @@ export class Github extends Component {
 
     render() {
         return (
-            <div className="tableScroll">
+            // <div className="tableScroll">
                 <div className="container">
                     <hr></hr>
                     <div className="bioInfo">
@@ -84,7 +83,9 @@ export class Github extends Component {
                                 </p>
                             </span>
                         </div>
-                        <div className="GitHubChart"><img className="GitHubChartImg" src="http://ghchart.rshah.org/LeeWannacott" className="GitHubChart" alt="Lee Wannacott GitHub chart"></img></div>
+                        <div className="GitHubChart">
+                            <img src="http://ghchart.rshah.org/LeeWannacott" alt="Loading: GitHub contributions chart..."></img>
+                        </div>
                     </div>
                     <hr></hr>
                     <h6 style={{ textAlign: "left", marginTop: "0.25em" }}>
@@ -134,7 +135,7 @@ export class Github extends Component {
                         </table>
                     </div>
                 </div>
-            </div>
+            // {/* </div> */}
         );
     }
 }

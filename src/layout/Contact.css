@@ -4,21 +4,9 @@
     margin-top: 1em;
 }
 
-.icon-mail{
-    margin-left: 0.5em;
-}
-
-.icon-linked{
-}
-
-.icon-github{
-    margin-right: 0.5em;
-
-}
-
 .social-icons a{
   font-size: 100px;
-  margin-right: 50px;
+  margin-right: 1em;
 	color: #B58900;
 }
 
