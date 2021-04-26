@@ -19,7 +19,7 @@ h6{
 td{
 	color: lightgrey;
 }
-  
+
 .bioInfo{
     display: flex;
     flex-direction: row;
@@ -54,11 +54,8 @@ td{
 	margin-right: 0.9em;
 	text-align: center;
 	color: white;
-	/* background-color: black; */
-	/* display: block;
-	width: 100%; */
-	/* object-fit: cover; */
 }
+
 .githubBasicStats{
     margin-right:auto;
     padding-left:1em;
@@ -68,5 +65,11 @@ td{
 .GitHubIcon{
   width: 8em;
   border-radius: 5px;
+}
+
+@media only screen and (max-width: 720px) {
+    .GitHubChart{
+        visibility: hidden;
+    }
 }
 
