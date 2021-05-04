@@ -1,9 +1,7 @@
 import axios from "axios";
 import React, { Component } from "react";
 import "./GitHub.css";
-// import $ from 'jquery';
-
-// import './table-sort'
+import tableSort from "table-sort-js/table-sort.js";
 
 export class Github extends Component {
     state = {
@@ -15,11 +13,12 @@ export class Github extends Component {
     };
 
     componentDidMount() {
-        const script = document.createElement("script");
-        script.src =
-            "https://leewannacott.github.io/table-sort-js/table-sort.js";
-        script.async = true;
-        document.body.appendChild(script);
+        tableSort()
+        // const script = document.createElement("script");
+        // script.src =
+            // "https://leewannacott.github.io/table-sort-js/table-sort.js";
+        // script.async = true;
+        // document.body.appendChild(script);
 
         this.setState({ loading: true });
         axios
@@ -135,7 +134,6 @@ export class Github extends Component {
                         </table>
                     </div>
                 </div>
-            // {/* </div> */}
         );
     }
 }
