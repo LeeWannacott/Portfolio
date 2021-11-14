@@ -6,7 +6,6 @@ import Home from './Home'
 import Projects from './Projects';
 import GitHub from './GitHub';
 import Contact from './Contact'
-import dogecomments from './dogecomments'
 // import LinearProgress from '@material-ui/core/LinearProgress';
 
 export class NavBar extends Component {
@@ -35,7 +34,6 @@ export class NavBar extends Component {
             <Route path="/Projects" component={Projects} />
             <Route path="/GitHub" component={GitHub} />
             <Route path="/Contact" component={Contact} />
-            <Route path="/dogecomments" component={dogecomments} />
           </Switch>
         </div>
 
