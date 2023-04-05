@@ -45,7 +45,7 @@ export class Github extends Component {
                 const stars = res.data;
                 this.setState({ stars });
             });
-    }
+   }
 
     render() {
         return (
@@ -105,7 +105,7 @@ export class Github extends Component {
                                         Open issues
                                     </th>
                                     <th className="order-by-desc">Stars</th>
-                                    <th className="order-by-desc">Size (MB)</th>
+                                    <th className="order-by-desc file-size-sort">Size</th>
                                 </tr>
                             </thead>
                             <tbody className="table-hover">
@@ -127,7 +127,7 @@ export class Github extends Component {
                                         <td> {repo.forks}</td>
                                         <td> {repo.open_issues}</td>
                                         <td> {repo.stargazers_count}</td>
-                                        <td> {Math.round(repo.size / 1000)}</td>
+                                        <td> {repo.size*1000+"B"}</td>
                                     </tr>
                                 ))}
                             </tbody>
