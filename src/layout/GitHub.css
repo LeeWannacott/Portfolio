@@ -1,7 +1,7 @@
 table {
-	border-color: lightgrey;
-	border-width: 1px;
-	border-radius: 5px;
+  border-color: lightgrey;
+  border-width: 1px;
+  border-radius: 5px;
 }
 
 th {
@@ -12,57 +12,56 @@ th {
   color: whitesmoke;
 }
 
-h6{
-	color: #B58900;
+h6 {
+  color: #b58900;
 }
 
-td{
-	color: lightgrey;
+td {
+  color: lightgrey;
 }
 
-.bioInfo{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
+.bioInfo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
 }
 
 .loader {
   position: relative;
   bottom: -3em;
   background: rgba(255, 255, 255, 0.2);
-
 }
 .loader img {
   position: relative;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
-.GitHubChart{
-	display: flex;
-	flex-grow: 2;
-	justify-content: flex-end;
+.GitHubChart {
+  display: flex;
+  flex-grow: 2;
+  justify-content: flex-end;
 }
 
-.GitHubChart img{
-	/* justify-self: flex-end; */
-	display: flex;
-	justify-content: flex-end;
-	object-fit: cover;
-	display: block;
-	width: 100%;
-	margin-right: 0.9em;
-	text-align: center;
-	color: white;
+.GitHubChart img {
+  /* justify-self: flex-end; */
+  display: flex;
+  justify-content: flex-end;
+  object-fit: cover;
+  display: block;
+  width: 100%;
+  margin-right: 0.9em;
+  text-align: center;
+  color: white;
 }
 
-.githubBasicStats{
-    margin-right:auto;
-    padding-left:1em;
-	padding-right: 0.5em;
+.githubBasicStats {
+  margin-right: auto;
+  padding-left: 1em;
+  padding-right: 0.5em;
 }
 
-.GitHubIcon{
+.GitHubIcon {
   width: 8em;
   border-radius: 5px;
 }
@@ -76,8 +75,7 @@ a:visited {
 }
 
 @media only screen and (max-width: 720px) {
-    .GitHubChart{
-        visibility: hidden;
-    }
+  .GitHubChart {
+    visibility: hidden;
+  }
 }
-

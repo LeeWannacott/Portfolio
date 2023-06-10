@@ -2,6 +2,8 @@ import axios from "axios";
 import React, { Component } from "react";
 import "./GitHub.css";
 import tableSort from "table-sort-js/table-sort.js";
+// import { Octokit } from "https://cdn.skypack.dev/@octokit/rest";
+const { Octokit } = require("@octokit/rest");
 
 export class Github extends Component {
   state = {
@@ -19,28 +21,38 @@ export class Github extends Component {
     // "https://leewannacott.github.io/table-sort-js/table-sort.js";
     // script.async = true;
     // document.body.appendChild(script);
-
     this.setState({ loading: true });
-    axios
-      .get(
-        `https://api.github.com/users/leewannacott/repos?client_id=${process.env.REACT_APP_GITHUB_CLIENT_ID}&client_secret${process.env.REACT_APP_GITHUB_CLIENT_SECRET}`
-      )
+    const octokit = new Octokit({
+      auth: `${process.env.REACT_APP_GITHUB_CLIENT_SECRET}`,
+    });
+
+    octokit
+      .request("GET /user/repos", {
+        headers: {
+          "X-GitHub-Api-Version": "2022-11-28",
+          accept: "application/vnd.github+json",
+        },
+        per_page: 100,
+        visibility: "public",
+      })
       .then((res) => {
         const repos = res.data;
         this.setState({ repos });
       });
+
+    const config = {
+      // client_id:`${process.env.REACT_APP_GITHUB_CLIENT_ID}`,
+      client_secret: `${process.env.REACT_APP_GITHUB_CLIENT_SECRET}`,
+      per_page: 100,
+    };
     axios
-      .get(
-        `https://api.github.com/users/leewannacott?client_id=${process.env.REACT_APP_GITHUB_CLIENT_ID}&client_secret${process.env.REACT_APP_GITHUB_CLIENT_SECRET}`
-      )
+      .get(`https://api.github.com/users/leewannacott`, config)
       .then((res) => {
         const user = res.data;
         this.setState({ user });
       });
     axios
-      .get(
-        `https://api.github.com/users/leewannacott/starred?client_id=${process.env.REACT_APP_GITHUB_CLIENT_ID}&client_secret${process.env.REACT_APP_GITHUB_CLIENT_SECRET}`
-      )
+      .get(`https://api.github.com/users/leewannacott/starred`, config)
       .then((res) => {
         const stars = res.data;
         this.setState({ stars });
@@ -60,10 +72,9 @@ export class Github extends Component {
           >
             <img src={this.state.user.avatar_url} className="GitHubIcon"></img>
           </a>
-
           <div className="githubBasicStats">
             <span>
-              <p className="githubBasicStats" style={{whiteSpace:"nowrap"}}>
+              <p className="githubBasicStats" style={{ whiteSpace: "nowrap" }}>
                 {"Following: " + this.state.user.following + ""}
                 <br />
                 {"Followers: " + this.state.user.followers + " "}
@@ -111,9 +122,9 @@ export class Github extends Component {
                     {" "}
                     {repo.created_at.split("-")[0] +
                       "-" +
-                      repo.created_at.split("-")[1]+
+                      repo.created_at.split("-")[1] +
                       "-" +
-                      repo.created_at.split("-")[2].substr(0,2)}
+                      repo.created_at.split("-")[2].substr(0, 2)}
                   </td>
                   <td> {repo.language}</td>
                   <td> {repo.description}</td>

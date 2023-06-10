@@ -2,15 +2,15 @@
   text-align: center;
 }
 
-div.container{
+div.container {
   background-color: #052028;
   padding-bottom: 5px;
 }
 html {
- background-color: #052028;
+  background-color: #052028;
 }
 header {
- background-color: #052028;
+  background-color: #052028;
 }
 
 .App-logo {
@@ -24,8 +24,7 @@ header {
   }
 }
 
-
-@keyframes App-logo-spin { 
+@keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }

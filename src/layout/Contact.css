@@ -1,13 +1,13 @@
-.heading{
-    text-align: left;
-    color: rgb(31, 31, 82);
-    margin-top: 1em;
+.heading {
+  text-align: left;
+  color: rgb(31, 31, 82);
+  margin-top: 1em;
 }
 
-.social-icons a{
+.social-icons a {
   font-size: 100px;
   margin-right: 1em;
-	color: #B58900;
+  color: #b58900;
 }
 
 .fab:hover {
