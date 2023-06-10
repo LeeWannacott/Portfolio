@@ -90,13 +90,13 @@ export class Github extends Component {
             <thead className="cw-light">
               <tr>
                 <th>Repository Name</th>
+                <th className="order-by-desc dates-ymd-sort">Created</th>
                 <th>Language</th>
-                <th className="order-by-desc">Created</th>
                 <th>Description</th>
-                <th className="order-by-desc">Forks</th>
-                <th className="order-by-desc">Open issues</th>
-                <th className="order-by-desc">Stars</th>
-                <th className="col-md-2">Size</th>
+                <th className="order-by-desc numeric-sort">Forks</th>
+                <th className="order-by-desc numeric-sort">Open issues</th>
+                <th className="order-by-desc numeric-sort">Stars</th>
+                <th className="col-md-2 file-size-sort">Size</th>
               </tr>
             </thead>
             <tbody className="table-hover">
@@ -107,15 +107,15 @@ export class Github extends Component {
                       {repo.name}
                     </a>
                   </td>
-                  <td> {repo.language}</td>
                   <td>
                     {" "}
                     {repo.created_at.split("-")[0] +
                       "-" +
                       repo.created_at.split("-")[1]+
                       "-" +
-                      repo.created_at.split("-")[2]}
+                      repo.created_at.split("-")[2].substr(0,2)}
                   </td>
+                  <td> {repo.language}</td>
                   <td> {repo.description}</td>
                   <td> {repo.forks}</td>
                   <td> {repo.open_issues}</td>
