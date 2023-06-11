@@ -21,11 +21,11 @@ export class Github extends Component {
     // "https://leewannacott.github.io/table-sort-js/table-sort.js";
     // script.async = true;
     // document.body.appendChild(script);
-    this.setState({ loading: true });
+
     const octokit = new Octokit({
       auth: `${process.env.REACT_APP_GITHUB_CLIENT_SECRET}`,
     });
-
+// 
     octokit
       .request("GET /user/repos", {
         headers: {
@@ -38,13 +38,14 @@ export class Github extends Component {
       .then((res) => {
         const repos = res.data;
         this.setState({ repos });
-      });
-
+      }).catch((e)=>console.log(e));
+// 
     const config = {
       // client_id:`${process.env.REACT_APP_GITHUB_CLIENT_ID}`,
       client_secret: `${process.env.REACT_APP_GITHUB_CLIENT_SECRET}`,
       per_page: 100,
     };
+    this.setState({ loading: true });
     axios
       .get(`https://api.github.com/users/leewannacott`, config)
       .then((res) => {
