@@ -1,8 +1,6 @@
 import React from "react";
 import "./App.css";
-import { render } from "@testing-library/react";
 import NavBar from "./layout/NavBar";
-import Projects from "./layout/Projects";
 
 function App() {
   return (
