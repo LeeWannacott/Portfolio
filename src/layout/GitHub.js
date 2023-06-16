@@ -16,6 +16,11 @@ export class Github extends Component {
 
   componentDidMount() {
     tableSort();
+    // const script = document.createElement("script");
+    // script.src =
+    // "https://leewannacott.github.io/table-sort-js/table-sort.js";
+    // script.async = true;
+    // document.body.appendChild(script);
 
     const octokit = new Octokit({
       auth: window.atob(`${(process.env.REACT_APP_GITHUB_CLIENT_SECRET)}`),
