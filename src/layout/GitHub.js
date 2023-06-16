@@ -22,25 +22,25 @@ export class Github extends Component {
     // script.async = true;
     // document.body.appendChild(script);
 
-    // const octokit = new Octokit({
-      // auth: `${process.env.REACT_APP_GITHUB_CLIENT_SECRET}`,
-    // });
+    const octokit = new Octokit({
+      auth: window.atob(`${(process.env.REACT_APP_GITHUB_CLIENT_SECRET)}`),
+    });
 
-    // let repos = octokit
-      // .request("GET /user/repos", {
-        // headers: {
-          // "X-GitHub-Api-Version": "2022-11-28",
-          // accept: "application/vnd.github+json",
-        // },
-        // per_page: 100,
-        // visibility: "public",
-      // })
-      // .then((res) => {
-        // const repos = res.data;
-        // this.setState({ repos });
-      // }).catch((e)=>console.log(e));
+    let repos = octokit
+      .request("GET /user/repos", {
+        headers: {
+          "X-GitHub-Api-Version": "2022-11-28",
+          accept: "application/vnd.github+json",
+        },
+        per_page: 100,
+        visibility: "public",
+      })
+      .then((res) => {
+        const repos = res.data;
+        this.setState({ repos });
+      }).catch((e)=>console.log(e));
 // 
-    // console.log(repos)
+    console.log(repos)
     const config = {
       // client_id:`${process.env.REACT_APP_GITHUB_CLIENT_ID}`,
       // client_secret: `${process.env.REACT_APP_GITHUB_CLIENT_SECRET}`,
