@@ -13,6 +13,7 @@ import Home from "./Home";
 import Projects from "./Projects";
 import GitHub from "./GitHub";
 import Contact from "./Contact";
+import Blog from "./Blog";
 // import LinearProgress from '@material-ui/core/LinearProgress';
 
 export class NavBar extends Component {
@@ -44,6 +45,7 @@ export class NavBar extends Component {
         <div>
           <Switch>
             <Route exact path="/" component={Home} />
+            <Route path="/Blog" component={Blog} />
             <Route path="/Projects" component={Projects} />
             <Route path="/GitHub" component={GitHub} />
             <Route path="/Contact" component={Contact} />
