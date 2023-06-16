@@ -25,6 +25,10 @@ export class NavBar extends Component {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
+              <Nav.Link className="nav-link" as={Link} to="/Blog">
+                {" "}
+                Blog{" "}
+              </Nav.Link>
               <Nav.Link as={Link} to="/Projects">
                 {" "}
                 Projects{" "}

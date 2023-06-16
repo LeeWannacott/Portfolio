@@ -1,0 +1,37 @@
+.heading {
+  text-align: left;
+  color: rgb(31, 31, 82);
+  margin-top: 1em;
+}
+
+h1 {
+  color: white;
+}
+h2 {
+  color: #268bd2;
+  padding: 0.5em;
+}
+
+.blogTitle {
+  display: flex;
+}
+
+.blogTags {
+  display: flex;
+  justify-content: space-evenly;
+}
+.blogTag {
+  background-color: rgb(33, 37, 41);
+}
+
+pre {
+  background-color: #93a1a1;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding: 1rem;
+  border-radius: 0.2rem;
+}
+
+figure{
+  display: center;
+}
