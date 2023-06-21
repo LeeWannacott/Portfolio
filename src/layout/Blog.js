@@ -1,8 +1,18 @@
 import React, { useEffect, useState } from "react";
 import "./Blog.css";
+// import  "./assets/rainbow.css";
+// import "./assets/solarized-dark.css";
 
 function Contact() {
   const [mediumArticles, setMediumArticles] = useState("");
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "./assets/rainbow";
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+  }, []);
+
   useEffect(() => {
     fetch(
       "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@lee.wannacott",
@@ -14,7 +24,31 @@ function Contact() {
         .catch((e) => console.log(e))
     );
   }, []);
-  console.log(mediumArticles);
+
+
+  function processMediumContent(article) {
+    var element = document.createElement("div");
+    element.insertAdjacentHTML("beforeend", article.content);
+    let preTags = element.querySelectorAll("pre");
+    let imageTags = element.querySelectorAll("figure");
+
+    for (let image of imageTags){
+      image.classList.add("medium-image")
+    }
+
+    for (let pre of preTags) {
+      let code = document.createElement("code");
+      code.setAttribute("data-language", "javascript");
+      code.classList.add("code-block")
+      // code.innerText = rainbow.colorSync(code.textContent, 'javascript');
+      code.innerHTML = pre.innerHTML;
+      pre.innerHTML = "";
+      pre.classList.add("pre-code")
+      pre.appendChild(code);
+    }
+    return element.outerHTML;
+  }
+
   return (
     <div className="container">
       <h1>latest posts</h1>
@@ -75,9 +109,9 @@ function Contact() {
                     </a>
                   ))}
                 </div>
-                <code>
-                  <p dangerouslySetInnerHTML={{ __html: article.content }}></p>
-                </code>
+                <p
+                  dangerouslySetInnerHTML={{ __html: processMediumContent(article) }}
+                ></p>
               </>
             );
           })

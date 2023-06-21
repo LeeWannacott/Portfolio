@@ -24,14 +24,22 @@ h2 {
   background-color: rgb(33, 37, 41);
 }
 
-pre {
-  background-color: #93a1a1;
+.medium-image {
+  text-align: center;
+}
+
+.pre-code {
   margin-left: 2rem;
   margin-right: 2rem;
   padding: 1rem;
   border-radius: 0.2rem;
+  background-color:rgb(0, 43, 54) ;
 }
 
-figure{
+.code-block {
+  color: white;
+}
+
+figure {
   display: center;
 }
