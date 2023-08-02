@@ -102,6 +102,9 @@ function Contact() {
                 <div className="blogTitle">
                   <h2>{article.title}</h2>
                 </div>
+                <p
+                  dangerouslySetInnerHTML={{ __html: processMediumContent(article) }}
+                ></p>
                 <div className="blogTags">
                   {article.categories.map((category) => (
                     <a href={"https://medium.com/tag/" + category}>
@@ -109,9 +112,6 @@ function Contact() {
                     </a>
                   ))}
                 </div>
-                <p
-                  dangerouslySetInnerHTML={{ __html: processMediumContent(article) }}
-                ></p>
               </>
             );
           })
