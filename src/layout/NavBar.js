@@ -1,12 +1,8 @@
-import React, { Component, useCallback } from "react";
-import { Link, Route, NavLink, Switch, match } from "react-router-dom";
+import React, { Component } from "react";
+import { Link, Route,  Switch, } from "react-router-dom";
 import {
   Nav,
   Navbar,
-  NavDropdown,
-  Form,
-  FormControl,
-  Button,
 } from "react-bootstrap";
 import "./Navbar.css";
 import Home from "./Home";
@@ -29,10 +25,11 @@ export class NavBar extends Component {
                 {" "}
                 Blog{" "}
               </Nav.Link>
-              <Nav.Link as={Link} to="/Projects">
+              {/*<Nav.Link as={Link} to="/Projects">
                 {" "}
                 Projects{" "}
               </Nav.Link>
+              */}
               <Nav.Link as={Link} to="/GitHub">
                 {" "}
                 Github Statistics{" "}
